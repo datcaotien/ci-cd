@@ -10,13 +10,6 @@ pipeline {
      REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${SERVICE_NAME}:${BUILD_ID}"
    }
 
-   stages {
-      stage('Preparation') {
-         steps {
-            cleanWs()
-            git credentialsId: 'GitHub', url: "https://github.com/datcaotien/ci-cd"
-         }
-      }
       stage('Build') {
          steps {
             sh 'echo No build required for Webapp.'
