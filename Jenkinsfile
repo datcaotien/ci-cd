@@ -1,5 +1,9 @@
 pipeline {
-   agent any
+   agent {
+      docker {
+         image 'outrigger/jenkins-docker'
+         }
+      }
 
    environment {
      // You must set the following environment variables
