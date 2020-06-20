@@ -1,4 +1,3 @@
-@Library("k8sagent@v0.1.0") _
 pipeline {
    agent any
 
