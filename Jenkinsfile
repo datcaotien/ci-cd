@@ -1,8 +1,6 @@
 @Library("k8sagent@v0.1.0") _
 pipeline {
-   agent {
-      kubernetes(k8sagent(name: 'mini+pg'))
-      }
+   agent any
 
    environment {
      // You must set the following environment variables
