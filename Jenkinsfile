@@ -1,5 +1,7 @@
 pipeline {
-   agent any
+   agent {
+      kubernetes(k8sagent(name: 'mini+pg'))
+      }
 
    environment {
      // You must set the following environment variables
