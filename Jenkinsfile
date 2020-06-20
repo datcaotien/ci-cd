@@ -2,6 +2,7 @@ pipeline {
    agent {
       docker {
          image 'outrigger/jenkins-docker'
+         label 'docker'
          }
       }
 
